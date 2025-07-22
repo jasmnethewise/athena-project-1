@@ -1,0 +1,31 @@
+@font-face {
+    src: url(fonts/Jersey10-Regular.ttf);
+    font-family:jersy10;
+}
+
+
+
+body {
+    background-color: black;
+    border: 5px solid #20C20E;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 35px solid #20C20E;
+    border-bottom: 10px solid #20C20E;
+    border-left: 10px solid #20C20E;
+    border-right: 10px solid #20C20E;
+    
+}
+.top-border-text{
+    position: absolute;
+    top:-25px;
+    left:50%;
+    transform: translateX(-50%);
+    color:white;
+    font-size:18px;
+    padding:0 10px;
+    font-family: jersy10, sans-serif;
+    white-space:nowrap;
+}
