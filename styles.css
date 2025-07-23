@@ -30,12 +30,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 220px;
+    margin-top: 210px;
 }
 .start-button {
-    width: 300px;
+    width: 330px;
     max-width: 100%;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s;
+}
+.lolow-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -410px;
+}
+.lolow-logo {
+    width: 310px;
+    max-width: 100%;
+    height: auto;
 }
