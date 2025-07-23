@@ -1,13 +1,11 @@
 @font-face {
-    src: url(fonts/Jersey10-Regular.ttf);
-    font-family:jersy10;
+    src: url(fonts/PressStart2P-Regular.ttf);
+    font-family: pressStart2P;
 }
-
 
 
 body {
     background-color: black;
-    border: 5px solid #20C20E;
     margin: 0;
     height: 100vh;
     position: relative;
@@ -16,16 +14,28 @@ body {
     border-bottom: 10px solid #20C20E;
     border-left: 10px solid #20C20E;
     border-right: 10px solid #20C20E;
-    
-}
-.top-border-text{
+}  
+.top-border-text {
     position: absolute;
-    top:-25px;
-    left:50%;
+    top: -25px;
+    left: 50%;
     transform: translateX(-50%);
-    color:white;
-    font-size:18px;
-    padding:0 10px;
-    font-family: jersy10, sans-serif;
-    white-space:nowrap;
+    color: white;
+    font-size: 13px;
+    padding: 0 10px;
+    font-family: pressStart2P , monospace;
+    white-space: nowrap;
+}
+.button-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 220px;
+}
+.start-button {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
