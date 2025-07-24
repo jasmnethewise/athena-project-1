@@ -26,19 +26,6 @@ body {
     font-family: pressStart2P , monospace;
     white-space: nowrap;
 }
-.button-design {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 240px;
-}
-.start-button {
-    width: 330px;
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
 .lolow-logo-container {
     display: flex;
     justify-content: center;
