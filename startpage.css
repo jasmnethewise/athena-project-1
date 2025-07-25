@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
 @font-face {
     src: url(fonts/PressStart2P-Regular.ttf);
     font-family: pressStart2P;
 }
-
-
 body {
     background-color: black;
     margin: 0;
@@ -15,6 +19,15 @@ body {
     border-left: 10px solid #20C20E;
     border-right: 10px solid #20C20E;
 }  
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+}
 .top-border-text {
     position: absolute;
     top: -25px;
@@ -28,26 +41,60 @@ body {
 }
 .lolow-logo-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+    justify-content: flex-start;
+    left: 1px;
+    position: absolute;
+    top: 10%;
+    
+
 }
 .lolow-logo {
-    width: 310px;
-    max-width: 100%;
+    width: 450px;
+    max-width: none;
     height: auto;
+    
+}
+.dash-button-container {
+    display: flex;
+    justify-content: left;   
+    align-self: flex-start;
+    position: absolute;
+    top: 1px;
+    left: 10px;
 }
 .dash-button {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: -305px;
-}
-.dashboard {
     width: 100px;
     max-width: 100%;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s;
-    
+    align-self: flex-start;
+
+}
+.timer-display {
+    color: white;
+    font-family: pressStart2P, monospace;
+    font-size: 110px;
+    position: absolute;
+    top:185px;
+    left: 35%;
+}
+.timer-buttons {
+    display: flex;
+}
+.start-stop-button{
+    width: 215px; 
+    height: auto;
+    position: absolute;
+    top: 370px;
+    left: 67%;
+
+}
+.pause-button {
+    width: 217px; 
+    height: auto;
+    align-self: flex-start;
+    position:absolute;
+    top: 370px;
+    left: 45%;
 }

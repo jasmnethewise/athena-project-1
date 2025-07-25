@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    
 }
 @font-face {
     src: url(fonts/PressStart2P-Regular.ttf);
@@ -46,7 +46,7 @@ body {
     align-self: center;
     position:absolute;
     top: 50%;
-    left: 460px;
+    
 
 }
 .start-button {
@@ -68,7 +68,7 @@ body {
 }
 .lolow-logo {
     width: 310px;
-    max-width: 100%;
+    
     height: auto;
     align-self: center
 }
