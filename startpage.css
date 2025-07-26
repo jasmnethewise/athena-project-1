@@ -107,3 +107,17 @@ body {
     left: 66%;
 
 }
+.timer-display {
+    background: none;
+    border:none;
+    color: white;
+    font-family: pressStart2P, monospace;
+    font-size: 170px;
+    text-align: center;
+    width: 1300px;
+    position: absolute;
+    top: 210px;
+    left: 25%;
+    outline: none;
+    font-variant-numeric: tabular-nums;
+}

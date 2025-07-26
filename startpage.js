@@ -1,34 +1,61 @@
 const startStopButton = document.getElementById('start-stop');
 const pauseButton = document.getElementById('pause');
-const timerDisplay = document.getElementById('timer');
+const timerInput = document.getElementById('timer');
+const resetButton = document.getElementById('reset');
 
 let timeLeft = 1500;
 let interval;
 
-const updateTimer = () => {
+function praseTimerInput() {
+    const [ mins , secs] = timerInput.value.split(':').map(Number);
+    return (mins * 60 + (secs || 0)) || 0;   
+}
+
+function updateTimerDisplay() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
-
-    timerDisplay.innerHTML = ` ${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+    timerInput.value = ` ${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 }
 
-const startTimer = () => {
-    interval = setInterval( () => {
-        timeLeft--;
-        updateTimer();
-
-        if (timeLeft === 0) {
+function startTimer() {
+    timeLeft = praseTimerInput();
+    clearInterval(interval);
+    interval = setInterval(() => {
+        if (timeLeft <= 0) {
             clearInterval(interval);
             alert("Time's up!");
-            timeLeft = 1500;
-            updateTimer();
-
+            return;
         }
+        timeLeft--;
+        updateTimerDisplay();
     }, 1000);
-
+}
+function pauseTimer() {
+    clearInterval(interval);
 }
 
-const pauseTimer = () => clearInterval(interval);
+function resetTimer() {
+    clearInterval(interval);
+    timeLeft = 0;
+    updateTimerDisplay();
+}
 
-startStopButton.addEventListener("click" , startTimer);
-pauseButton.addEventListener("click" , pauseTimer);
+startStopButton.addEventListener("click", startTimer);
+pauseButton.addEventListener("click", pauseTimer);
+resetButton.addEventListener("click", resetTimer);
+timerInput.addEventListener('keydown', function (e) {
+    
+    const cursorPos = timerInput.selectionStart;
+
+    
+    if ((e.key === 'Backspace' && cursorPos === 3) || 
+        (e.key === 'Delete' && cursorPos === 2)) {
+        e.preventDefault();
+    }
+
+    
+    const allowedKeys = ['Backspace', 'ArrowLeft', 'ArrowRight', 'Tab', 'Delete'];
+    if (!/^[0-9]$/.test(e.key) && !allowedKeys.includes(e.key)) {
+        e.preventDefault();
+    }
+});
