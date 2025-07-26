@@ -45,12 +45,13 @@ body {
     align-items: center;
     align-self: center;
     position:absolute;
-    top: 50%;
+    top: 55%;
+    
     
 
 }
 .start-button {
-    width: 330px;
+    width: 480px;
     max-width: 100%;
     height: auto;
     cursor: pointer;
@@ -63,11 +64,11 @@ body {
     align-items: center;
     align-self: center;
     position: absolute;
-    top: 5%;
+    top: 3%;
 
 }
 .lolow-logo {
-    width: 310px;
+    width: 450px;
     
     height: auto;
     align-self: center

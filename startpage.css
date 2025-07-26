@@ -45,11 +45,9 @@ body {
     left: 1px;
     position: absolute;
     top: 10%;
-    
-
 }
 .lolow-logo {
-    width: 450px;
+    width: 500px;
     max-width: none;
     height: auto;
     
@@ -97,4 +95,12 @@ body {
     position:absolute;
     top: 370px;
     left: 45%;
+}
+.timer-picker-hidden {
+    display: none;
+    position: absolute;
+    top:185px;
+    left: 35%;
+    font-family: pressStart2P, monospace;
+    
 }
