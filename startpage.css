@@ -72,29 +72,29 @@ body {
 .timer-display {
     color: white;
     font-family: pressStart2P, monospace;
-    font-size: 110px;
+    font-size: 133px;
     position: absolute;
-    top:185px;
-    left: 35%;
+    top:210px;
+    left: 44%;
 }
 .timer-buttons {
     display: flex;
 }
 .start-stop-button{
-    width: 215px; 
+    width: 200px; 
     height: auto;
     position: absolute;
     top: 370px;
-    left: 67%;
+    left: 63%;
 
 }
 .pause-button {
-    width: 217px; 
+    width: 200px; 
     height: auto;
     align-self: flex-start;
     position:absolute;
     top: 370px;
-    left: 45%;
+    left: 52%;
 }
 .timer-picker-hidden {
     display: none;

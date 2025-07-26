@@ -1,9 +1,23 @@
-let timerIntreval;
-let timeInseconds = 1500;
-let timerDisplay = document.querySelector('.timer-display');
-let timerPicker = document.querySelector('.timer-picker-hidden');
-let hourSelect = document.getElementById('hour-select');
-let minuteSelector = document.getElementById('minute-selector');
-timerDisplay.addEventListener('click', () => {
-    timerPicker.style.display = 'block';
-});
+const startStopButton = document.getElementById('start-stop');
+const pauseButton = document.getElementById('pause');
+const timerDisplay = document.getElementById('timer');
+
+let timeLeft = 1500;
+let interval;
+
+const updateTimer = () => {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+
+    timerDisplay.innerHTML = ` ${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+}
+
+const startTimer = () => {
+    interval = setInterval( () => {
+        timeLeft--;
+        updateTimer();
+
+        
+    }, 1000);
+
+}
