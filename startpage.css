@@ -85,7 +85,8 @@ body {
     height: auto;
     position: absolute;
     top: 370px;
-    left: 63%;
+    left: 55%;
+    cursor: pointer;
 
 }
 .pause-button {
@@ -94,13 +95,15 @@ body {
     align-self: flex-start;
     position:absolute;
     top: 370px;
-    left: 52%;
+    left: 43%;
+    cursor: pointer;
 }
-.timer-picker-hidden {
-    display: none;
+.reset-button {
+    width: 360px;
+    height: auto;
     position: absolute;
-    top:185px;
-    left: 35%;
-    font-family: pressStart2P, monospace;
-    
+    cursor: pointer;
+    top: 290px;
+    left: 66%;
+
 }

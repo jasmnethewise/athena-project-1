@@ -17,7 +17,18 @@ const startTimer = () => {
         timeLeft--;
         updateTimer();
 
-        
+        if (timeLeft === 0) {
+            clearInterval(interval);
+            alert("Time's up!");
+            timeLeft = 1500;
+            updateTimer();
+
+        }
     }, 1000);
 
 }
+
+const pauseTimer = () => clearInterval(interval);
+
+startStopButton.addEventListener("click" , startTimer);
+pauseButton.addEventListener("click" , pauseTimer);
