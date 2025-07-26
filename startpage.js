@@ -7,14 +7,14 @@ let timeLeft = 1500;
 let interval;
 
 function praseTimerInput() {
-    const [ mins , secs] = timerInput.value.split(':').map(Number);
-    return (mins * 60 + (secs || 0)) || 0;   
+    const [mins, secs] = timerInput.value.split(':').map(Number);
+    return (mins * 60) + (isNaN(secs) ? 0 : secs);
 }
 
 function updateTimerDisplay() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
-    timerInput.value = ` ${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+    timerInput.value = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 }
 
 function startTimer() {
@@ -23,7 +23,11 @@ function startTimer() {
     interval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(interval);
-            alert("Time's up!");
+            document.getElementById('message').textContent = "Time's up!";
+            document.getElementById('message').style.display = 'block';
+
+            const audio = document.getElementById('audio');
+            audio.play();
             return;
         }
         timeLeft--;
