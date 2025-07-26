@@ -2,6 +2,8 @@ const startStopButton = document.getElementById('start-stop');
 const pauseButton = document.getElementById('pause');
 const timerInput = document.getElementById('timer');
 const resetButton = document.getElementById('reset');
+const settingsButton = document.getElementById('settings');
+const settingsPopup = document.getElementById('settings-popup');
 
 let timeLeft = 1500;
 let interval;
@@ -27,7 +29,12 @@ function startTimer() {
             document.getElementById('message').style.display = 'block';
 
             const audio = document.getElementById('audio');
-            audio.play();
+            const soundToggle = document.getElementById('sound-toggle');
+
+            if (soundToggle.checked) {
+                audio.play();
+            }
+
             return;
         }
         timeLeft--;
@@ -62,4 +69,8 @@ timerInput.addEventListener('keydown', function (e) {
     if (!/^[0-9]$/.test(e.key) && !allowedKeys.includes(e.key)) {
         e.preventDefault();
     }
+});
+settingsButton.addEventListener('click', () => {
+  settingsPopup.style.display =
+    settingsPopup.style.display === 'block' ? 'none' : 'block';
 });

@@ -132,3 +132,82 @@ body {
     top: 600px;
     left: 48%;
 }
+.settings-button-container {
+    display: flex;
+    justify-content: left;
+    align-self: flex-start;
+    position: absolute;
+    top: 18px;
+    left: 8%;
+}
+.settings-button {
+    width: 112px;
+    cursor: pointer;    
+}
+.settings-popup {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  background-color: #111;
+  border: 2px solid #20C20E;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  z-index: 999;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: pressStart2P, monospace;
+  font-size: 12px;
+  gap: 10px;
+}
+
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #20C20E;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
