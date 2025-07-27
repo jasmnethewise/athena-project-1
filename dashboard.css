@@ -39,3 +39,41 @@ body {
     font-family: pressStart2P , monospace;
     white-space: nowrap;
 }
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  gap: 8px;
+  margin-top: 80px;
+}
+
+.day {
+  text-align: center;
+  border: 1px solid white;
+  padding: 5px 0;
+  position: relative;
+  height: 60px;
+  font-family: pressStart2P;
+  color: white;
+  font-size: 12px;
+}
+
+.day.today {
+  background-color: #20C20E;
+  color: black;
+}
+
+.time-worked {
+  font-size: 8px;
+  color: #20C20E;
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  left: 0;
+}
+
+.total-time {
+  color: white;
+  font-family: pressStart2P;
+  font-size: 16px;
+  margin-top: 20px;
+}

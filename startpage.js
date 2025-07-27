@@ -8,7 +8,7 @@ const settingsPopup = document.getElementById('settings-popup');
 let timeLeft = 1500;
 let interval;
 
-function praseTimerInput() {
+function parseTimerInput() {
     const [mins, secs] = timerInput.value.split(':').map(Number);
     return (mins * 60) + (isNaN(secs) ? 0 : secs);
 }
@@ -20,7 +20,7 @@ function updateTimerDisplay() {
 }
 
 function startTimer() {
-    timeLeft = praseTimerInput();
+    timeLeft = parseTimerInput();
     clearInterval(interval);
     interval = setInterval(() => {
         if (timeLeft <= 0) {
@@ -50,6 +50,7 @@ function resetTimer() {
     timeLeft = 0;
     updateTimerDisplay();
 }
+
 
 startStopButton.addEventListener("click", startTimer);
 pauseButton.addEventListener("click", pauseTimer);
