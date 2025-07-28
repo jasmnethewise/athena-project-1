@@ -50,7 +50,11 @@ body {
     width: 500px;
     max-width: none;
     height: auto;
+    cursor: pointer;
     
+}
+.lolow-logo:active {
+    transform: scale(1.1);
 }
 .about-container {
     display: flex;
@@ -220,7 +224,7 @@ input:checked + .slider:before {
   object-fit: cover;
   z-index: -1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
     .lolow-logo-container {
     display: flex;
     justify-content: center;
@@ -252,19 +256,21 @@ input:checked + .slider:before {
   .start-stop-button {
     left: 53%;
     transform: translateX(60px);
+    top: 450px;
   }
 
   .pause-button {
     left: 55%;
     transform: translateX(-60px);
+    top: 450px;
   }
 
   .reset-button {
-    width: 235px;
+    width: 250px;
     left: 50%;
     transform: translateX(-100%);
-    top: 475px;
-    bottom: 60px;
+    top: 385px;
+    
   }
 
   .message {
@@ -286,8 +292,16 @@ input:checked + .slider:before {
   }
 
   .settings-popup {
-    width: 90%;
-    left: 5%;
+    width: 60%;
+    left: 60px;
     font-size: 10px;
   }
+.about-container {
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  left: 10%;
+  display: flex;
+  justify-content: flex-start;
+}
 }
