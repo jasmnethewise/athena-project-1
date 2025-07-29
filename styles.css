@@ -18,6 +18,10 @@ body {
     border-bottom: 10px solid #20C20E;
     border-left: 10px solid #20C20E;
     border-right: 10px solid #20C20E;
+    background-image: url("images/background.gif");
+    background-repeat: repeat; 
+    background-size: 280px 280px; 
+    background-color: black;
 }  
 .main-container {
     display: flex;

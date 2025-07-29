@@ -11,13 +11,17 @@
 body {
     background-color: black;
     margin: 0;
-    height: 100vh;
+    height: 300vh;
     position: relative;
     box-sizing: border-box;
     border-top: 35px solid #20C20E;
     border-bottom: 10px solid #20C20E;
     border-left: 10px solid #20C20E;
     border-right: 10px solid #20C20E;
+    background-image: url("images/background.gif");
+    background-repeat: repeat; 
+    background-size: 280px 280px; 
+    background-color: black;
 }  
 .main-container {
     display: flex;
@@ -25,7 +29,7 @@ body {
     align-items: center;
     gap: 20px;
     justify-content: space-between;
-    height: 100vh;
+    height: 300vh;
     position: relative;
 }
 .top-border-text {
@@ -38,4 +42,18 @@ body {
     padding: 0 10px;
     font-family: pressStart2P , monospace;
     white-space: nowrap;
+}
+.lolow {
+    width: 1500px;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: -13%;
+    left: 6%;
+}
+.pixel-border {
+    width: 900px;
+    position: absolute;
+    top: 500px;
+    left: 28%;
 }
