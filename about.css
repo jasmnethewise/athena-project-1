@@ -51,9 +51,94 @@ body {
     top: -13%;
     left: 6%;
 }
-.pixel-border {
-    width: 900px;
+
+.about-me-button {
+    width: 400px;
     position: absolute;
-    top: 500px;
-    left: 28%;
+    top: 400px;
+    left: 18%;
+    cursor: pointer;
+}
+.about-me-button:active {
+    transform: scale(1.1);
+}
+.about-lolow-button {
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    left: 38%;
+    cursor: pointer;
+}
+.about-lolow-button:active {
+    transform: scale(1.1);
+}
+.contacts {
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    left: 58%;
+    cursor: pointer;
+}
+.contacts:active {
+    transform: scale(1.1);
+}
+.about-me-button,
+.about-lolow-button,
+.contacts {
+  z-index: 10;
+}
+.vertical-box {
+  width: 1090px;        
+  height: 1300px;       
+  border: dashed 10px #20C20E;
+  position: absolute;
+  top: 475px;
+  left: 16.5%;
+
+}
+.vertical-box1 {
+  width: 1090px;        
+  height: 1300px;
+  border-top: dashed 10px #20C20E;
+  position: absolute;
+  top: 720px;
+  left: 16.5%;
+
+}
+.h1 {
+    font-family: pressStart2P, monospace;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+    position: absolute;
+    top: 300px;
+    left: 3%;
+
+}
+.p1 {
+    font-family: pressStart2P, monospace;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    top: 400px;
+    left: 3%;
+    width: 900px;
+    line-height: 1.5;
+    padding: 20px;
+    padding-right: 100px;
+}
+.p2 {
+    font-family: pressStart2P, monospace;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    position: absolute;
+    top: 1150px;
+    left: 3%;
+    width: 900px;
+    line-height: 1.5;
+    padding: 20px;
+    padding-right: 100px;
 }
