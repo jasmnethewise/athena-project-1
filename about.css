@@ -153,9 +153,34 @@ body {
     position: absolute;
     top: 1400px;
     left: 61%;
+
     width: 400px;
     cursor: pointer;
     z-index: 10;
     transform-origin: center center;
 
+}
+.p4 {
+    font-family: pressStart2P, monospace;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    top: 1850px;
+    left: 3%;
+    width: 900px;
+    line-height: 1.5;
+    padding: 20px;
+}
+.p5{
+    font-family: pressStart2P, monospace;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    top: 1900px;
+    left: 3%;
+    width: 900px;
+    line-height: 1.5;
+    padding: 20px;
 }

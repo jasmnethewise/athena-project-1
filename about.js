@@ -12,3 +12,4 @@ disk.addEventListener('click', () => {
     isPlaying = true;
   }
 });
+
