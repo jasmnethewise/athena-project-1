@@ -53,7 +53,7 @@ body {
     
 }
 .start-button {
-    width: 26vw; max-width: 700px;
+    width: 26vw; max-width: 450px;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s;
@@ -69,7 +69,7 @@ body {
 
 }
 .lolow-logo {
-    width: 26vw; max-width: px;    
+    width: 26vw;    
     height: auto;
     align-self: center;
     cursor: pointer;
@@ -96,17 +96,19 @@ body {
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
     .main-container {
         gap: 20px;
     }
 
     .lolow-logo {
         width: 60vw;
-        height: auto;
+        max-width: 300px;
+        
     }
 
     .start-button {
         width: 60vw;
+        max-width: 300px;
     }
 }
