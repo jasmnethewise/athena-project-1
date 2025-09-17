@@ -14,11 +14,11 @@ body {
     height: 100vh;
     position: relative;
     box-sizing: border-box;
-    border-top: 35px solid #20C20E;
+    border-top: 27px solid #20C20E;
     border-bottom: 10px solid #20C20E;
     border-left: 10px solid #20C20E;
     border-right: 10px solid #20C20E;
-    background-image: url("images/background.gif");
+    background-image: url('images/background.gif');
     background-repeat: repeat; 
     background-size: 280px 280px; 
     background-color: black;
@@ -34,11 +34,11 @@ body {
 }
 .top-border-text {
     position: absolute;
-    top: -25px;
+    top: -19px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 13px;
+    font-size: 10px;
     padding: 0 10px;
     font-family: pressStart2P , monospace;
     white-space: nowrap;
@@ -53,8 +53,7 @@ body {
     
 }
 .start-button {
-    width: 480px;
-    max-width: 100%;
+    width: 26vw; max-width: 700px;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s;
@@ -70,7 +69,7 @@ body {
 
 }
 .lolow-logo {
-    width: 450px;    
+    width: 26vw; max-width: px;    
     height: auto;
     align-self: center;
     cursor: pointer;
@@ -96,12 +95,18 @@ body {
     align-self: flex-start;
     
 }
-#background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
+
+@media (max-width: 500px) {
+    .main-container {
+        gap: 20px;
+    }
+
+    .lolow-logo {
+        width: 60vw;
+        height: auto;
+    }
+
+    .start-button {
+        width: 60vw;
+    }
 }
