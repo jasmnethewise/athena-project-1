@@ -11,11 +11,11 @@
 body {
     background-color: black;
     margin: 0;
-    height: 400vh;
+    height: auto;
     position: relative;
     box-sizing: border-box;
-    border-top: 35px solid #20C20E;
-    
+    border-top: 27px solid #20C20E;
+    border-bottom: 10px solid #20C20E;
     border-left: 10px solid #20C20E;
     border-right: 10px solid #20C20E;
     background-image: url("images/background.gif");
@@ -35,81 +35,58 @@ body {
 }
 .top-border-text {
     position: absolute;
-    top: -25px;
+    top: -19px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 13px;
+    font-size: 10px;
     padding: 0 10px;
     font-family: pressStart2P , monospace;
     white-space: nowrap;
 }
 .lolow {
-    width: 1500px;
+    width: 1000px;
     position: absolute;
     flex-direction: column;
     align-items: center;
-    top: -10%;
-    left: 6%;
+    top: -9%;
+    left: 10%;
 }
-
 .about-me-button {
-    width: 400px;
+    width: 350px;
     position: absolute;
-    top: 400px;
-    left: 18%;
+    top: 315px;
+    left: 10%;
     cursor: pointer;
 }
 .about-me-button:active {
     transform: scale(1.1);
 }
-.about-lolow-button {
-    width: 400px;
-    position: absolute;
-    top: 400px;
-    left: 38%;
-    cursor: pointer;
-}
-.about-lolow-button:active {
-    transform: scale(1.1);
-}
-.contacts {
-    width: 400px;
-    position: absolute;
-    top: 400px;
-    left: 58%;
-    cursor: pointer;
-}
-.contacts:active {
-    transform: scale(1.1);
-}
-.about-me-button,
-.about-lolow-button,
-.contacts {
+.about-me-button {
   z-index: 10;
 }
 .vertical-box {
-  width: 1090px;        
+  width: 1000px;        
   height: 1300px;       
   border: dashed 10px #20C20E;
   position: absolute;
-  top: 475px;
-  left: 16.5%;
+  top: 370px;
+  left: 10%;
 
 }
 .vertical-box1 {
-  width: 1090px;        
+  width: 1000px;        
   height: 1300px;
   border-top: dashed 10px #20C20E;
   position: absolute;
-  top: 720px;
-  left: 16.5%;
+  top: 600px;
+  left: 10%;
 
 }
 .h1 {
     font-family: pressStart2P, monospace;
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     text-decoration: underline;
     position: absolute;
@@ -151,10 +128,10 @@ body {
 }
 .disk-icon {
     position: absolute;
-    top: 1400px;
-    left: 61%;
+    top: 1370px;
+    left: 67%;
 
-    width: 400px;
+    width: 320px;
     cursor: pointer;
     z-index: 10;
     transform-origin: center center;
@@ -166,7 +143,7 @@ body {
     font-size: 20px;
     text-align: left;
     position: absolute;
-    top: 1850px;
+    top: 1750px;
     left: 3%;
     width: 900px;
     line-height: 1.5;
@@ -178,7 +155,7 @@ body {
     font-size: 20px;
     text-align: left;
     position: absolute;
-    top: 1900px;
+    top: 1800px;
     left: 3%;
     width: 900px;
     line-height: 1.5;

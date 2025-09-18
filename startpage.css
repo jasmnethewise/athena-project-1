@@ -10,7 +10,7 @@
 }
 body {
     background-color: black;
-    margin: 0;
+    
     height: auto;
     position: relative;
     box-sizing: border-box;
@@ -77,14 +77,7 @@ body {
     align-self: flex-start;
     
 }
-.timer-display {
-    color: white;
-    font-family: pressStart2P, monospace;
-    font-size: 133px;
-    position: absolute;
-    top:210px;
-    left: 44%;
-}
+
 .timer-buttons {
     display: flex;
 }
@@ -93,7 +86,7 @@ body {
     height: auto;
     position: absolute;
     top: 300px;
-    left: 55%;
+    left: 52%;
     cursor: pointer;
 
 }
@@ -103,15 +96,15 @@ body {
     align-self: flex-start;
     position:absolute;
     top: 300px;
-    left: 45%;
+    left: 43%;
     cursor: pointer;
 }
 .reset-button {
-    width: 300px;
+    width: 215px;
     height: auto;
     position: absolute;
     cursor: pointer;
-    top: 218px;
+    top: 332px;
     left: 63%;
 
 }
@@ -120,12 +113,12 @@ body {
     border:none;
     color: white;
     font-family: pressStart2P, monospace;
-    font-size: 140px;
+    font-size: 130px;
     text-align: center;
-    width: 1000px;
+    width: 900px;
     position: absolute;
     top: 160px;
-    left: 25%;
+    left: 27%;
     outline: none;
     font-variant-numeric: tabular-nums;
     letter-spacing: 4px;
@@ -163,7 +156,6 @@ body {
   display: none;
   z-index: 999;
 }
-
 .setting-row {
   display: flex;
   align-items: center;
@@ -173,21 +165,17 @@ body {
   font-size: 12px;
   gap: 10px;
 }
-
-
 .toggle {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 30px;
 }
-
 .toggle input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
 .slider {
   position: absolute;
   cursor: pointer;
@@ -199,7 +187,6 @@ body {
   bottom: 0;
   transition: 0.4s;
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -211,7 +198,6 @@ body {
   transition: 0.4s;
   border-radius: 50%;
 }
-
 input:checked + .slider {
   background-color: #20C20E;
 }
